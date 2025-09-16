@@ -1,0 +1,13 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The program's performance was highly dependent on the initial order of the list. It was very slow when sorting a large reversed list but finished almost instantly when given a pre-sorted list.
+This dramatic improvement in the best-case scenario is the signature behavior of Bubble Sort, which has a time complexity of O(n) for sorted lists but O(n2) for reversed lists.
+
+sort2 uses: Merge Sort
+
+How do you know?: This program was by far the fastest when sorting the large, reversed list. Its performance remained consistently efficient across different inputs. This high performance on large, unsorted datasets is characteristic of Merge Sort, which has a time complexity of O(nlogn) for all cases (best, average, and worst), making it significantly more efficient than the other two algorithms for this task.
+
+sort3 uses: Selection Sort
+
+How do you know?: The program's execution time was slow and, crucially, almost identical for both the reversed list and the pre-sorted list.
+The fact that it gained no performance advantage from an already sorted input is the key identifier for Selection Sort. This algorithm always performs the same number of comparisons regardless of the input's order, resulting in a consistent O(n2) time complexity in all scenarios.
